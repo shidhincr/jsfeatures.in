@@ -1,6 +1,6 @@
 importScripts('/cache-polyfill.js');
 
-var staticCache = 'jsfeatures-v2';
+var staticCache = 'jsfeatures-v3';
 
 var myCaches = [staticCache];
 
