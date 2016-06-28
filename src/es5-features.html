@@ -12,6 +12,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
 <link rel='import' href='../bower_components/syntax-highlight/syntax-highlight.html'>
 
+<link rel="import" href="code-highlight.html">
 
 <dom-module id="es5-feaures">
 
@@ -74,6 +75,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                  {{item.code}}
                  </syntax-highlight>
                </div>
+               <code-highlight code="{{item.data.code}}" lang="js"></code-highlight>
              </div>
            </template>
            <syntax-highlight lang="js">

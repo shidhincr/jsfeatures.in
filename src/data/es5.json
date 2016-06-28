@@ -1,15 +1,18 @@
 [
-  { 'Object.create': { code: `o = {};
-                      // is equivalent to:
-                      o = Object.create(Object.prototype);`,
+  { 'Object.create': { code: `
+   o = {};
+  // is equivalent to:
+  o = Object.create(Object.prototype);`,
     info: 'Creates a new object with the specified prototype object and properties.' }},
 
-  { 'Object.defineProperty': { code: `Object.defineProperty(obj, 'answer', {
-                                      value: 42,
-                                      writable: true,
-                                      enumerable: true,
-                                      configurable: true
-                                    });`,
+  { 'Object.defineProperty': { code: `Object.defineProperty(obj,
+      'answer', {
+        value: 42,
+        writable: true,
+        enumerable: true,
+        configurable: true
+      });
+`,
       info: 'Defines a new property directly on an object, or modifies an existing property on an object, and returns the object.' } },
 
   { 'Object.defineProperties': { code: `var obj = {};
